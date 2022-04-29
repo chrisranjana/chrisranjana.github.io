@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /recent-projects/
+Disallow: /developers-programmers/
+Disallow: /html-tutorial-tags/
+Disallow: /freebsd-handbook-documentation/
+Disallow: /php5-manual/
+Disallow: /traffic-rotation/
+Disallow: /leads-brokerage-systems/
+Disallow: /search-engine-submission/
+Disallow: /linux-documentation/
+Disallow: /apache-documentation/
+Disallow: /php-manual/
+Disallow: /webinfo/
+Disallow: /index.O.html
+Disallow: /index.VERYGOOD.html
+
+
+
+
+
+

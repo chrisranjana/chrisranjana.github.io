@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Opencart Developer | Opencart Programmers  | Opencart module/plugin developers/Programmers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width"/>
+<META NAME="keywords" CONTENT="Opencart Programmers, Opencart Developers, Opencart custom developer, Opencart custom theme integrations, Opencart custom plugins, Opencart and vQmod">
+<META NAME="description" CONTENT="We are custom opencart developer team and opencart programmers. We can do opencart customizations. We can create opencart modules and opencart plugins. Our opencart developer can use vqMod / ocmod to customize opencart. We can integrate custom themes with opencart.">
+
+
+
+<style type="text/css">
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://themes.googleusercontent.com/static/fonts/oswald/v8/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 200;
+}
+
+.chrisp {
+	
+	font-family: 'Verdana', arial, sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.chrispc {
+	
+	font-family: 'Verdana', arial, sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+
+h3 {
+font-size: 0.9em;
+font-weight: 900;
+}
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+}
+hr {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	margin: 25px 0;
+	clear: both;
+}
+.centered {
+	text-align: center;
+}
+.wrapper {
+	width: 100%;
+	padding: 30px 0;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+ul.grid-nav {
+	list-style: none;
+	font-size: .85em;
+	font-weight: 200;
+	text-align: center;
+}
+ul.grid-nav li {
+	display: inline-block;
+}
+ul.grid-nav li a {
+	display: inline-block;
+	/*background: #999;*/
+	
+	
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+ul.grid-nav li a:hover {
+	background: #7b0;
+}
+ul.grid-nav li a.active {
+	background: #333;
+}
+.grid-container {
+	display: none;
+}
+/* ----- Image grids ----- */
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	
+	border: 1px solid #FF6600;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .8em;
+	line-height: 1.5em;
+	color: #777777;
+	font-weight: 900;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+ul.rig.columns-4 a {
+	text-decoration:none;
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
+
+.dark-matter {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background: #555;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px #444;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.dark-matter h1 {
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #444;
+    margin: -10px -30px 30px -30px;
+}
+.dark-matter h1>span {
+    display: block;
+    font-size: 11px;
+}
+.dark-matter label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.dark-matter label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
+    border: none;
+    color: #525252;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    background: #DFDFDF;
+}
+.dark-matter select {
+    background: #DFDFDF url('opencartprogrammers/down-arrow.png.html') no-repeat right;
+    background: #DFDFDF url('opencartprogrammers/down-arrow.png.html') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    color: #525252;
+    line-height: 25px;
+}
+.dark-matter textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.dark-matter .button {
+    background: #FF6600;
+	
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFFF00;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    /*text-shadow: 1px 1px 1px #FFE477;*/
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+
+.dark-matter .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+ul.chris1 {
+
+
+}
+
+ul.chris1 li {
+
+
+}
+
+.chrisheader {
+overflow:auto;
+
+}
+
+.chrisheader img {
+  float: left;
+  
+margin-right:30px
+  
+  
+}
+
+.chrisheader h1 {
+  float: left;
+  margin-left: 30px;
+  
+  
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+	<div class="container">
+		<div class="chrisheader"><a href="index.html" title="python nodejs aws php laravel developers"><img src="web-developers.png" alt="Custom Opencart Developers"></a>
+		<h1>Opencart Developer  | Opencart Programmers  | Opencart module/plugin developers/Programmers</h1></div>
+<p class="chrispc">We are an opencart developer team. Our opencart programmers can custom program opencart version 2 also. We can take up custom opencart projects. We can integrate custom opencart themes. Please find below the list of services
+ we can offer for opencart customizations. Contact us at <a href="mailto:info@chrisranjana.com">info@chrisranjana.com</a> <a href="tel:+919080469395 "> +91 9080469395</a></p>
+		
+		<hr />
+
+	
+		
+		
+		<!--/#four-columns-->
+		<div id="two-columns" class="grid-container" style="display:block;">
+			<ul class="rig columns-3">
+				<li>
+					
+					<h3>Opencart modules and plugins developers</h3>
+					<p>We can custom program opencart, adding a new functionality or updating an existing functionality.</p>
+				</li>
+				<li>
+					
+					<h3>Speeding up Opencart</h3>
+					<p>We can optimize your large opencart installation. We can improve the opencart page loading times and improve the speed of your opencart website. We can identify bottlenecks in your opencart installation and correct it. 
+					Our opencart developer can optimize opencart mysql queries so that your customers have a more pleasant experience while accessing your website, especially if your opencart website is huge.
+					
+					</p>
+				</li>
+				<li>
+					
+					<h3>Opencart vQmod programming</h3>
+					<p>We can program using vQmod while customizing opencart. This will leave opencart core files untouched.</p>
+				</li>
+				
+				<li>
+					
+					<h3>Opencart Extensions</h3>
+					<p>We can create opencart extensions based on your custom needs. We have created an <a href="http://www.opencart.com/index.php?route=extension/extension/info&amp;extension_id=1967" target="_blank">opencart extension</a> earlier. 
+					This extension is listed in the opencart extensions listings.</p>
+				</li>
+				<li><h3><a href="opencartprogrammers/opencartpickinglist.html">Opencart Automatic picking list integration.</a></h3>
+<p>Automatic picking list report and automatic new orders are created using this opencart picking list module.</p>
+</li>
+				<li>					
+					<h3>Opencart themes integration</h3>
+					<p>Our opencart developer can integrate custom themes with opencart. Attention to detail is our speciality. Sometimes theme integration will involve custom programming to opencart and we can handle the same.</p>
+				</li>
+				<li>					
+					<h3>Opencart programming testimonial</h3>
+					<p><a href="opencartprogrammers/opencartprogramming/opencarttestimonial.jpg" target="_blank"><img src="opencartprogrammers/opencartprogrammers/opencartprogramming/opencarttestimonial.jpg.html" alt="Opencart testimonial" title="opencart testimonial"></a></p>
+				</li>
+				
+				<li>					
+					<h3>Opencart Upgrade</h3>
+					<p>We can upgrade your existing version of opencart.</p>
+				</li>
+
+<li><h3>Opencart payment gateway integration developers</h3>
+<p>We can integrate any payment gateway with opencart. We have experience integrating and testing paypal ipn, paypal pro, authorize.net etc.</p>
+</li>				
+
+<li><h3><a href="opencartprogrammers/opencartmarginschememodule.html">Opencart margin scheme for vat module</a></h3>
+<p>We created this opencart module which creates separate invoices for taxable and non taxable products (vat and non vat products) in a single shopping cart.</p>
+</li>		
+
+
+<li><h3>Opencart shipping integration</h3>
+<p>We can integrate any kind of shipping API's with opencart. Different kinds of shipping providers can be integrated with opencart.</p>
+</li>	
+				
+				<li>					
+					<h3>Integration of Opencart with other scripts</h3>
+					<p>Do you need a message board to go with your opencart shop? Or do you need a survey system for each of your opencart products? 
+					Or do you need a company blog for your opencart site. We can integrate any kind of existing scripts with your opencart installation. We can 
+					integrate phpbb, wordpress, geodesic classifieds etc with opencart.
+					</p>
+				</li>
+
+				<li>					
+					<h3>Riskified integration with opencart</h3>
+					<p>The Riskified API (http://apiref.riskified.com/curl/#overview) was integrated with the checkout process of opencart.
+					</p>
+				</li>
+				<li>					
+					<h3>Php mycrypt installation in centos server</h3>
+					<p>Opencart requires php mycrypt for installation. To satisfy this mcrypt server requirement, we installed php mcrypt in centos server using yum package manager.
+					</p>
+				</li>
+				
+				<li>					
+					<h3><a href="opencartprogrammers/opencartcxmlintegration.html">Integration of opencart with Sciquest cXML and xebra cxml</a></h3>
+					<p>Opencart was integrated with Sciquest API using cXML.
+					</p>
+				</li>
+				
+				
+				<li><h3><a href="opencartprogrammers/opentshirtdeveloper.html">Custom Opencart Opentshirts Programmers</a></h3>
+<p>We have customized opentshirts module of opencart.</p>
+</li>		
+				<li><h3><a href="opencartprogrammers/opentshirtssocialsharing.html">Opentshirts and Addthis buttons integration</a></h3>
+<p>Share your opentshirts designs on facebook, twitter using this social media button integration opentshirts plugin.</p>
+</li>		
+
+			<li><h3><a href="opencartprogrammers/opencartmoodleintegration.html">Opencart Moodle Integration.</a></h3>
+<p>Moodle and Opencart integration was done. Our opencart programmers completed tbis project.</p>
+</li>	
+
+			<li><h3><a href="opencartprogrammers/opencartimagemanager.html">Opencart Image Manager.</a></h3>
+<p>Our Opencart developer has created an image manager. Both ftp and web based upload can be used.</p>
+</li>
+
+			<li><h3><a href="opencartprogrammers/opencartimportexport.html">Opencart Import/Export Migration.</a></h3>
+<p>Migrate your opencart data between different versions of Opencart.</p>
+</li>
+
+		<li><h3><u>Opencart 3 latest version customization.</u></h3>
+<p>Customization of opencart latest version 3 can be done. TWIG templates can be customized.</p>
+</li>
+
+</ul>
+		</div>
+		<hr />
+		
+		<p class="chrispc"> &nbsp; &copy; Copyright  1999-2022. Chrisranjana algorithms.  (<a href="tel:+919080469395">+91-9080469395</a>) (<a href="tel:+919080469395 "> +91 9080469395 </a>) </p>
+	</div>
+	<!--/.container-->
+</div>
+<!--/.wrapper-->
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1218012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d4d0881e5ae967ef80f36ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
